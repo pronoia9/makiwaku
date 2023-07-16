@@ -12,20 +12,20 @@
 
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
-  --playfair-display: 'Playfair Display', serif;
-  --plus-jakarta-sans: 'Plus Jakarta Sans', sans-serif;
-
-  --primary-color: rgb(177, 69, 74);
-  --secondary-color: rgb(18, 18, 18);
-
-  --black-200: rgb(2, 2, 2);
-  --black-300: rgb(51, 51, 51);
-  --black-400: rgb(31, 30, 49);
-  --black-500: rgb(85, 85, 85);
-  --gray-100: rgb(136, 136, 136);
+  --color-primary: rgb(177, 69, 74);
+  
+  --color-secondary: rgb(18, 18, 18);
+  --color-black-200: rgb(2, 2, 2);
+  --color-black-300: rgb(51, 51, 51);
+  --color-black-400: rgb(31, 30, 49);
+  --color-black-500: rgb(85, 85, 85);
+  --color-gray-100: rgb(136, 136, 136);
 
   --color-white: rgb(255, 255, 255);
   --color-creamson: rgb(255, 240, 222);
+
+  --font-secondary: 'Playfair Display', serif;
+  --font-primary: 'Plus Jakarta Sans', sans-serif;
 }
 
 * {
@@ -38,6 +38,7 @@
 body {
   max-width: 80rem;
   margin: 0 auto;
+  font-family: var(--font-primary);
   background-color: var(--color-creamson);
 }
 
@@ -61,9 +62,9 @@ a {
 .sushi__subtitle {
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: var(--plus-jakarta-sans);
+  font-family: var(--font-primary);
 
-  color: var(--primary-color);
+  color: var(--color-primary);
   opacity: 0.8;
 
   letter-spacing: -0.01em;
@@ -72,9 +73,9 @@ a {
 .sushi__title {
   font-size: 4rem;
   font-weight: 600;
-  font-family: var(--playfair-display);
+  font-family: var(--font-secondary);
 
-  color: var(--secondary-color);
+  color: var(--color-secondary);
 
   margin-top: 1rem;
 }
@@ -82,12 +83,12 @@ a {
 .sushi__description {
   font-size: 1.125rem;
   font-weight: 400;
-  font-family: var(--plus-jakarta-sans);
+  font-family: var(--font-primary);
 
   line-height: 2.25rem;
   letter-spacing: -0.01em;
 
-  color: var(--secondary-color);
+  color: var(--color-secondary);
   opacity: 0.8;
 
   margin: 2rem 0px;
@@ -166,7 +167,7 @@ a {
 /* START: header media querie */
 @media screen and (max-width: 56.25rem) {
   .header__nav {
-    background: var(--primary-color);
+    background: var(--color-primary);
   }
 
   .header__menu {

@@ -74,8 +74,6 @@
 }
 
 .hero-content__buttons button {
-  outline: none;
-  border: none;
   cursor: pointer;
 }
 

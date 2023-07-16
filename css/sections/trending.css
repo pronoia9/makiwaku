@@ -1,0 +1,145 @@
+.trending {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.trending__discover {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.trending__discover p {
+  color: var(--color-white);
+  font-size: 1.12rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.trending-sushi,
+.trending-drink {
+  width: 100%;
+  min-height: 640px;
+  display: flex;
+  flex-direction: row;
+}
+
+.trending__content {
+  flex: 1;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.trending__list {
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+
+.trending__list li {
+  min-width: 210px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.75rem;
+}
+
+.trending__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--color-primary);
+  border-radius: 100%;
+}
+
+.trending__icon img {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.trending__list p {
+  flex: 1;
+  color: var(--color-secondary);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.trending__image {
+  flex: 1;
+  position: relative;
+  padding: 2rem 4rem;
+  background-color: var(--color-white);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.trending-sushi .trending__image {
+  background-image: url('../../assets/japanese_sushi.png');
+}
+
+.trending-drink .trending__image {
+  background-image: url('../../assets/japanese_drinks.png');
+}
+
+.trending__image img {
+  width: 15.88rem;
+  height: 16.25rem;
+  object-fit: contain;
+}
+
+/* Arrows */
+.trending__arrow {
+  position: absolute;
+  z-index: 1;
+}
+
+.trending__arrow img {
+  object-fit: contain;
+}
+
+.trending__arrow-left {
+  left: -0.18rem;
+  top: 12%;
+}
+
+.trending__arrow-left img,
+.trending__arrow-top img {
+  width: auto;
+  height: 100%;
+}
+
+.trending__arrow-top {
+  top: -0.8rem;
+  left: 12%;
+}
+
+.trending__arrow-bottom {
+  bottom: -0.41rem;
+  right: 12%;
+}
+
+.trending__arrow-bottom img,
+.trending__arrow-right img {
+  width: 100%;
+  height: auto;
+}
+
+.trending__arrow-right {
+  right: -0.18rem;
+  bottom: 12%;
+}

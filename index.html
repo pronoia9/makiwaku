@@ -14,26 +14,30 @@
     <title>Makiwaku</title>
   </head>
   <body>
+    <!-- START: header -->
     <header>
       <nav class="header__nav">
         <div class="header__logo">
-          <h4>Makiwaku</h4>
+          <!-- This how we use aos. Simply specify the type of animation using data attribute -->
+          <h4 data-aos="fade-down">Sushiman</h4>
           <div class="header__logo-overlay"></div>
         </div>
 
-        <ul class="header__menu">
-          <li><a href="#menu">Menu</a></li>
+        <ul class="header__menu" data-aos="fade-down">
+          <li>a href="#menu">Menu</a></li>
           <li><a href="#food">Food</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#about-us">About Us</a></li>
-          <li><img src="assets/search.svg" alt="search"></li>
+          <li><img src="assets/search.svg" alt="search" /></li>
         </ul>
 
-        <ul class="header__menu-mobile">
-          <li><img src="assets/menu.svg" alt="menu"></li>
+        <!-- Display Menu icon on small devices -->
+        <ul class="header__menu-mobile" data-aos="fade-down">
+          <li><img src="assets/menu.svg" alt="search" /></li>
         </ul>
       </nav>
     </header>
+    <!-- END: header -->
     <script type="module" src="/js/script.js"></script>
   </body>
 </html>

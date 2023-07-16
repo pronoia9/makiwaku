@@ -12,7 +12,7 @@
   z-index: 5;
 }
 
-.hero img {
+.hero-image img {
   width: 120%;
   height: 100%;
   object-fit: contain;
@@ -24,4 +24,88 @@
   width: 100%;
   background-color: var(--color-primary);
   z-index: -1;
+}
+
+.hero-image h2 {
+  position: absolute;
+  bottom: 0;
+  padding: 1.25rem;
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  font-size: 7.5rem;
+  font-weight: 700;
+  line-height: 8.62rem;
+}
+
+.hero-content {
+  flex: 1.219;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero-content-info {
+  padding: 4rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero-content-info h1 {
+  font-family: var(--font-secondary);
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+.hero-content-info p {
+  margin: 2rem 0 0 2rem;
+  color: var(--color-secondary);
+  font-size: 1.12rem;
+  font-weight: 400;
+}
+
+.hero-content__buttons {
+  margin: 2.56rem 0 0 2.56rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.25rem;
+}
+
+.hero-content__buttons button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-content__order-button {
+  padding: 1.25rem;
+  min-width: 13.25rem;
+  border-radius: 2.25rem;
+  background: var(--color-secondary);
+  color: var(--color-white);
+  font-size: 1.12rem;
+  font-weight: 500;
+  line-height: 1.44rem;
+}
+
+.hero-content__play-button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: transparent;
+  color: var(--color-black-200);
+  font-size: 1rem;
+  line-height: 1.19rem;
+}
+
+.hero-content__play-button img {
+  width: 2.88rem;
+  height: 2.88rem;
+  object-fit: contain;
+}
+
+.hero-content__play-button span {
+  text-align: left;
 }

@@ -1,0 +1,27 @@
+.hero {
+  min-height: calc(100vh - 4.62rem); /* full height - navbar */
+  display: flex;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: relative;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.hero img {
+  width: 120%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero-image__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: var(--color-primary);
+  z-index: -1;
+}

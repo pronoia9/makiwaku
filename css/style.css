@@ -33,18 +33,23 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: var(--font-primary);
 }
 
 body {
   max-width: 80rem;
   margin: 0 auto;
-  font-family: var(--font-primary);
   background-color: var(--color-creamson);
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
 }
 
 .flex-center {

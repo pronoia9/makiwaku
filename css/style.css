@@ -24,8 +24,8 @@
   --color-white: rgb(255, 255, 255);
   --color-creamson: rgb(255, 240, 222);
 
-  --font-secondary: 'Playfair Display', serif;
   --font-primary: 'Plus Jakarta Sans', sans-serif;
+  --font-secondary: 'Playfair Display', serif;
 }
 
 * {
@@ -40,14 +40,6 @@ body {
   margin: 0 auto;
   font-family: var(--font-primary);
   background-color: var(--color-creamson);
-}
-
-* {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
 }
 
 a {

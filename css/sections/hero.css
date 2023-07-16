@@ -109,3 +109,53 @@
 .hero-content__play-button span {
   text-align: left;
 }
+
+.hero-content__testimonial {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  background-color: var(--color-white);
+}
+
+.hero-content__customer {
+  flex: 1;
+  gap: 0.62rem;
+}
+
+.hero-content__customer h4 {
+  font-size: 3.88rem;
+  font-weight: 400;
+  font-family: var(--font-secondary);
+}
+
+.hero-content__customer p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-secondary);
+  opacity: 0.5;
+}
+
+.hero-content__review {
+  min-width: 12.5rem;
+  padding-left: 1.25rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 0.62rem;
+  border-left: 1px solid rgba(2, 2, 2, 0.1);
+}
+
+.hero-content__review img {
+  width: 2.62rem;
+  height: 2.62rem;
+  object-fit: contain;
+}
+
+.hero-content__review p {
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  opacity: 0.8;
+}

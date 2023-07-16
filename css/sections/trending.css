@@ -45,12 +45,12 @@
 
 .trending__list {
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 1.25rem;
   list-style: none;
 }
 
 .trending__list li {
-  min-width: 210px;
+  min-width: 20.62rem;
   flex: 1;
   display: flex;
   align-items: center;

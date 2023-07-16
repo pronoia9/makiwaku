@@ -73,10 +73,6 @@
   gap: 2.25rem;
 }
 
-.hero-content__buttons button {
-  cursor: pointer;
-}
-
 .hero-content__order-button {
   padding: 1.25rem;
   min-width: 13.25rem;

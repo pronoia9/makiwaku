@@ -13,7 +13,7 @@
 /* CSS variables for reusablity across all files (including above imported) */
 :root {
   --color-primary: rgb(177, 69, 74);
-  
+
   --color-secondary: rgb(18, 18, 18);
   --color-black-200: rgb(2, 2, 2);
   --color-black-300: rgb(51, 51, 51);
@@ -40,6 +40,14 @@ body {
   margin: 0 auto;
   font-family: var(--font-primary);
   background-color: var(--color-creamson);
+}
+
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
 }
 
 a {

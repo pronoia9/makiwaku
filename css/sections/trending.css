@@ -30,7 +30,7 @@
 .trending-sushi,
 .trending-drink {
   width: 100%;
-  min-height: 640px;
+  min-height: 40rem;
   display: flex;
   flex-direction: row;
 }

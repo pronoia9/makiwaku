@@ -36,7 +36,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 64px;
+  gap: 4rem;
   list-style: none;
 }
 
